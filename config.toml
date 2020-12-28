@@ -1,3 +1,16 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Telegram's Secret Chat FAQ"
+author = "Nickolay Bakharev"
+theme = "contrast-hugo-master"
+
+[params]
+  minimal = true
+  description = "Test Work for Documentat.io"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+
+
