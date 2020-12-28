@@ -1,16 +1,56 @@
-title = "Telegram's Secret Chat FAQ"
-author = "Nickolay Bakharev"
-theme = "contrast-hugo-master"
+baseURL = "https://athul.github.io/archie/"
+languageCode = "en-us"
+title = "Test Work for Documentat.io"
+theme="archie"
+copyright = "© bahus"
+# Code Highlight
+pygmentsstyle = "monokai"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+paginate=3 # articles per page
 
 [params]
-  minimal = true
-  description = "Test Work for Documentat.io"
-
-[menu]
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 10
+	mode="auto" # color-mode → light,dark or auto
+	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
+	subtitle = "subtitle"
 
 
+# Social Tags
+
+[[params.social]]
+name = "GitHub"
+icon = "github"
+url = "https://github.com/athul/archie"
+
+[[params.social]]
+name = "Twitter"
+icon = "twitter"
+url = "https://twitter.com/athulcajay/"
+
+[[params.social]]
+name = "GitLab"
+icon = "gitlab"
+url = "https://gitlab.com/athul/"
+
+# Main menu Items
+
+[[menu.main]]
+name = "Главная"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "Возможности"
+url = "/b.md"
+weight = 2
+
+[[menu.main]]
+name = "B.md"
+url = "/B.md"
+weight = 3
+
+[[menu.main]]
+name = "second"
+url = "/content/second.md"
+weight = 4

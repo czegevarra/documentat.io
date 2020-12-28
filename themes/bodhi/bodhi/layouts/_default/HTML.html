@@ -1,0 +1,13 @@
+{{ define "main" }}
+{{ .Title }}
+{{ .Content }}
+{{ with .Params.tags }}
+{{ range . }}
+{{ . }}
+{{ end }}
+{{ end }} {{ with .Site.DisqusShortname }}
+{{ template "_internal/disqus.html" . }}
+{{ end }} {{ with .Site.Params.CommentoSrc }}
+{{ partial "commento.html" . }}
+{{ end }}
+{{ end }}
